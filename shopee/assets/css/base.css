@@ -1,0 +1,142 @@
+:root {
+	--header-height: 120px;
+	--navbar-height: 33px;
+	--header-main-height: calc(var(--header-height) - var(--navbar-height));
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	line-height: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Test */
+/*.grid__col-2 {
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 16.6667%;
+}
+
+.grid__col-2-4 {
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 18.98%;
+}
+
+.grid__col-10 {
+    width: 81.682%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/**/
+/*.grid {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+}*/
+
+/* Modal */
+.modal {
+	display: flex;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+	background-color: #fff;
+	border-radius: 4px;
+	margin: auto;
+	z-index: 1;
+	overflow: hidden;
+}
+
+/* Btn */
+.selection-input,
+.form-btn {
+	min-width: 120px;
+	height: 32px;
+	border: none;
+	background-color: #fff;
+	border-radius: 2px;
+	font-size: 1.4rem;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.form-btn:hover {
+	background-color: rgba(0, 0, 0, 0.04);
+}
+
+.form-btn.form-btn-principal {
+	background-color: #fe6432;
+	color: #fff;
+}
+
+/* Selection input */
+.selection-input {
+	min-width: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8px;
+}
+
+
+/* Pagination UI */
+.pagination {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination .item {
+	margin: 0 12px;
+}
+
+.pagination .item a{
+	display: flex;
+	text-decoration: none;
+	color: #939393;
+	font-size: 1.8rem;
+	min-width: 40px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination a.pagination-persent {
+	background-color: #fe6432;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.pagination a.pagination-persent:hover {
+	background-color: #F35927;
+}
+
+.pagination .pagination-icon {
+
+}
+
+
+/* Animation */
+@keyframes appear-gradually {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
